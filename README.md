@@ -49,8 +49,10 @@
     end (while loop)
 
 ``````
-<H3>PROGRAM:</H3>
+<H3>Program:</H3>
+
 ```python
+
 
 from collections import defaultdict
 
@@ -113,8 +115,10 @@ def heuristic(n):
 
 Graph_nodes = defaultdict(list)
 
+# Input: number of nodes and number of edges
 n, e = map(int, input().split())
 
+# Input: edges (u v cost)
 for _ in range(e):
     u, v, cost = input().split()
     cost = int(cost)
@@ -122,14 +126,18 @@ for _ in range(e):
     Graph_nodes[u].append((v, cost))
     Graph_nodes[v].append((u, cost))
 
+# Input: heuristic values (node heuristic)
 for _ in range(n):
     node, h = input().split()
     H_dist[node] = int(h)
 
+# Input: start node and goal node
 start = input().strip()
 goal = input().strip()
 
 aStarAlgo(start, goal)
+
+
 ```
 <hr>
 <h2>Sample Graph I</h2>
