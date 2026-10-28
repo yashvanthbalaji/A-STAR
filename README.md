@@ -49,8 +49,8 @@
     end (while loop)
 
 ``````
-<H3>PROGRAM</H3>
-``````
+<H3>PROGRAM:</H3>
+```python
 
 from collections import defaultdict
 
@@ -130,7 +130,7 @@ start = input().strip()
 goal = input().strip()
 
 aStarAlgo(start, goal)
-``````
+```
 <hr>
 <h2>Sample Graph I</h2>
 <hr>
